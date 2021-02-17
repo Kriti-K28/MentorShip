@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style> 
+        .signup-image { 
+              animation: zoom_in ease-in-out 1s; 
+              animation-iteration-count: 1; 
+              animation-fill-mode: forwards; 
+            } 
+        @keyframes zoom_in {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style> 
+</head>
+<body>
+    <section class="signup">
+        <div class="container">
+            <div class="section_title mb-2" style="display: flex; justify-content: center;"> 
+                <img src="assets/imags/logo.png"  alt="" style="width: 25%; margin-top: 10px;">
+            </div>
+            <div class="signup-content">
+                <div class="signup-form">
+                    <h2 class="section-title text-center" style="margin-bottom: 30px;">Free Registration</h2>
+                    <form class="register-form" id="register-form" action="../resourcepage/ml.html">
+                        <div class="form-group">
+                            <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="zmdi zmdi-email"></i></label>
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="number"><i class="zmdi zmdi-lock"></i></label>
+                            <input type="text" name="number" id="number" placeholder="Your Contact number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                            <input type="password" name="pass" id="pass" placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                            <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="program"></label>
+                            <!-- <input type="dropdown" name="course" id="course" placeholder="Choose Course"/> -->
+                            <select class="form-control" name="experiance" id="dropdown" style="border: none; border-bottom: 1px solid black; border-radius: none;">
+                                <option disabled="" selected="" value="">Select your program</option>
+                                <option value="web">Web Development</option>
+                                <option value="app">App Development</option>
+                                <option value="ui">UI/UX Design</option>
+                                <option value="ui">Machine Learning</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required>
+                          I agree all statements in  <a href="#" class="term-service">Terms of service</a>
+                        </div>
+                        <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                        <a href="../index.html" class="signup-image-link form-submit">Back</a>
+                    </form>
+                </div>
+                <div class="signup-image"  style="margin-top: 10%;">
+                    <figure><img src="assets/imags/5293.png" alt="sing up image" style="width: 120%;"></figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
