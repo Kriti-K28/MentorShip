@@ -427,6 +427,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background-color:white;
   background-size: cover;
+  padding: 0 20px 0 20px;
 }
 
 #hero .container, #hero .container-fluid {
@@ -434,7 +435,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h1 {
- margin-left:10px;
+ margin-left:30px;
   font-size: 52px;
   font-weight: 700;
   line-height: 64px;
