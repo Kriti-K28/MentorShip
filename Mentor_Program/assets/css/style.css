@@ -445,140 +445,124 @@ nav ul li a:hover::after
  /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
-  font-size: 14px;
-  background: #2e2e2e;
-  margin-top: 40px;
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+
+.footerWrap {
+	background: #272727;
+	padding: 50px 0;
+  margin-top: 30px;
 }
-#footer .footer-top {
-  padding: 60px 0 30px 0;
-  background:  #303133;
+.footerWrap h5 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 15px;
+}
+.footerWrap p {
+	line-height: 22px;
+	color: #ccc;
+}
+.footerWrap .ft-logo {
+	margin-bottom: 15px;
+	text-align: center;
+}
+.social {
+	margin-top: 20px;
+}
+.social a {
+	color: #fff;
+	font-size: 32px;
+	display: inline-block;
+	margin-right: 5px;
+}
+.social a:hover {
+	color: #36b3e5;
+}
+.sidebar .social a {
+	color: #444;
+}
+/*Articles*/
+.posts-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.posts-list li {
+	border: none;
+	margin: 15px 0;
+}
+.posts-list .media-left {
+	margin-right: 30px;
+	width: 80px;
+	float: left;
+	padding-right: 0;
+}
+.posts-list .entry-title {
+	font-weight: 400;
+	text-transform: inherit;
+	margin: 0 0 5px;
+}
+.post .entry-title a {
+	color: #fff;
+	font-size: 16px;
+}
+.posts-list .entry-meta {
+	padding: 0;
+}
+.posts-list .entry-date {
+	color: #ccc;
+	font-style: italic;
+	text-transform: capitalize;
+}
+.footerWrap .quicklinks {
+	list-style: none;
 }
 
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-contact h3 {
-  font-size: 28px;
-  margin: 0 0 10px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: white;
-}
-
-#footer .footer-top .footer-contact p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Jost", sans-serif;
-  color: white;
-}
-
-#footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: white;
-  font-size: 18px;
-  line-height: 1;
-}
-
-#footer .footer-top .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-#footer .footer-top .footer-links ul a {
-  color:white;
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
-}
-
-#footer .footer-top .footer-links ul a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-#footer .footer-top .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #47b2e4;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#footer .footer-top .social-links a:hover {
-  background: #209dd8;
-  color: #fff;
+.footerWrap .quicklinks li a {
+	display: block;
+	color: #ccc;
+	padding: 8px 0;
+	font-size: 14px;
   text-decoration: none;
 }
-
-#footer .footer-bottom {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: #fff;
+.footerWrap .quicklinks li a:before {
+	content: '\f0da';
+	font-family: 'FontAwesome';
+	margin-right: 7px;
+}
+.footerWrap .quicklinks li a:hover {
+	color: #263bd6;
+	text-decoration: none;
+}
+.copyright {
+	padding: 10px 0;
+	text-align: center;
+	color: #777;
+}
+.copyright ul li{display:inline;}
+.copyright ul li a {
+	color: #555;
+	padding: 0 5px;
+	display: inline-block;
+	margin: 5px;
+}
+.copyright a:hover {
+	color: #000;
+}
+.bttxt {
+	color: #888;line-height:24px;
+}
+/*copyright*/
+.copyright {
+	padding: 20px 0;
 }
 
-@media (max-width: 768px) {
-  #footer .footer-bottom {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  #footer .copyright, #footer .credits {
-    text-align: center;
-    float: none;
-  }
-  #footer .credits {
-    padding-top: 4px;
-  }
-}
-/* ------------------------------------------------ */
-/* ----------------- RESOURCE PAGE      ----------- */
-/* ------------------------------------------------ */
-.resource
-{
-   height: 100%;
-   width: 100%;
-}
-/* -------PLAYER */
-#player
-{
-   /* height: 100%; */
-   width: 100%;
-   margin-right: 2px;
-}
+
+
+
 /* ------------------------------------------------ */
 /* ----------------- REGISTER PAGE   and JOIN LIVE SESSION PAGE    ----------- */
 /* ------------------------------------------------ */
