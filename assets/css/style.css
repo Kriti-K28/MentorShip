@@ -118,9 +118,6 @@ h1, h2, h3, h4, h5, h6 {
 #header a{
   color:#004289;
 }
-#header a:hover{
-  color:rgb(82, 200, 240);
-}
 
 #header.header-scrolled, #header.header-inner-pages {
   background: white;
@@ -184,28 +181,21 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 3px;
   font-family: "Open Sans", sans-serif;
 }
-
-.nav-menu > ul > li > a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
+nav ul li a::after
+{
+  color: #004289;
+  content: '';
+  display: block;
+  width: 0;
   height: 2px;
-  bottom: -5px;
-  left: 0;
-  background-color: #fff;
-  visibility: hidden;
-  width: 0px;
-  transition: all 0.3s ease-in-out 0s;
+  background: black;
+  transition: width .3s;
+}
+nav ul li a:hover::after
+{
+  width: 50%;
 }
 
-.nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
-  visibility: visible;
-  width: 100%;
-}
-
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #007bff;
-}
 
 .nav-menu .drop-down ul {
   display: block;
