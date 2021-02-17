@@ -6,6 +6,7 @@
     <title>Register </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style> 
         .signup-image { 
               animation: zoom_in ease-in-out 1s; 
@@ -31,7 +32,7 @@
             <div class="signup-content">
                 <div class="signup-form">
                     <h2 class="section-title text-center" style="margin-bottom: 30px;">Free Registration</h2>
-                    <form class="register-form" id="register-form" action="../resourcepage/ml.html">
+                    <form class="register-form" id="register-form" >
                         <div class="form-group">
                             <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                             <input type="text" name="name" id="name" placeholder="Your Name" required>
@@ -55,7 +56,7 @@
                         <div class="form-group">
                             <label for="program"></label>
                             <!-- <input type="dropdown" name="course" id="course" placeholder="Choose Course"/> -->
-                            <select class="form-control" name="experiance" id="dropdown" style="border: none; border-bottom: 1px solid black; border-radius: none;">
+                            <select class="form-control" name="experiance" id="prog" style="border: none; border-bottom: 1px solid black; border-radius: none;">
                                 <option disabled="" selected="" value="">Select your program</option>
                                 <option value="web">Web Development</option>
                                 <option value="app">App Development</option>
@@ -77,6 +78,43 @@
             </div>
         </div>
     </section>
+    <script>
+        
+// ========================================
+// For register page 
+    $(document).ready(function(){
+
+$("#prog").change(function(){
+// change fn on dept id
+   var selected_prog = $(this).children(":selected").text(); // Get the selected option value
+
+   switch(selected_prog){
+     case "Web Development":
+       $("#register-form").attr('action','../resourcepage/web.html');
+       // dynamically changing action attribute of form to cse.html
+       break;
+
+     case "App Development":
+       $("#register-form").attr('action','../resourcepage/app.html');
+       // dynamically changing action attribute of form to ECE.html
+       break;
+
+     case "UI/UX Design":
+       $("#register-form").attr('action','../resourcepage/ml.html');
+       // dynamically changing action attribute of form to ME.html
+       break;
+
+     case "Machine Learning":
+      $("#register-form").attr('action','../resourcepage/ml.html');
+      // dynamically changing action attribute of form to CE.html
+      break;
+     default:
+       $("#register-form").attr('action','#');
+      // Default action
+     }
+   });
+});
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>

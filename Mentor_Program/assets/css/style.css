@@ -311,6 +311,11 @@ nav ul li a:hover::after
      width: 100%;
      padding: 20px 0 40px 0;
   }
+  .program a
+  {
+     text-decoration: none;
+     /* color: rgb(49, 60, 209); */
+  }
   .prog_card
   {
     font-size: 15px;

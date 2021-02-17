@@ -166,3 +166,39 @@ $('#hide').on('click',function(){
   $('#two').hide('slow');
 });
 
+
+// ========================================
+// For register page 
+    $(document).ready(function(){
+
+      $("#prog").change(function(){
+   // change fn on dept id
+       var selected_prog = $(this).children(":selected").text(); // Get the selected option value
+  
+       switch(selected_prog){
+         case "Web Development":
+           $("#register-form").attr('action','../resourcepage/web.html');
+         // dynamically changing action attribute of form to cse.html
+         break;
+  
+         case "App Development":
+           $("#register-form").attr('action','../resourcepage/app.html');
+           // dynamically changing action attribute of form to ECE.html
+           break;
+  
+          case "UI/UX Design":
+        $("#register-form").attr('action','../resourcepage/ml.html');
+   // dynamically changing action attribute of form to ME.html
+       break;
+  
+       case "Machine Learning":
+       $("#register-form").attr('action','../resourcepage/ml.html');
+   // dynamically changing action attribute of form to CE.html
+       break;
+       default:
+       $("#register-form").attr('action','#');
+   // Default action
+       }
+       });
+   });
+
