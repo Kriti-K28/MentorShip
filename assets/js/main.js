@@ -226,5 +226,5 @@ $('#hide').on('click',function(){
   $('#two').hide('slow');
 });
 
-
 })(jQuery);
+var e= document.getElementById
